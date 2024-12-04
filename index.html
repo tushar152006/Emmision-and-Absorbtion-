@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absorption and Emission Spectra</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <header>
+        <h1>Absorption and Emission Spectra</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#calculator">Energy Calculator</a></li>
+                <li><a href="#graphs">Spectra Visualization</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>The absorption spectrum occurs when light is absorbed by matter at specific wavelengths, while the emission spectrum is the opposite phenomenon where matter emits light. These spectra are critical for understanding the interaction between light and matter.</p>
+        </section>
+
+        <!-- Energy Calculator Section -->
+        <section id="calculator">
+            <h2>Energy Calculator</h2>
+            <p>Calculate energy using the formula \( E = h \nu = \frac{hc}{\lambda} \):</p>
+            <form id="energyCalculator">
+                <label for="wavelength">Wavelength (\( \lambda \)) in nm:</label>
+                <input type="number" id="wavelength" name="wavelength" step="0.1" required>
+                <button type="button" onclick="calculateEnergy()">Calculate Energy</button>
+            </form>
+            <p id="result"></p>
+        </section>
+
+        <!-- Graph Visualization Section -->
+        <section id="graphs">
+            <h2>Spectra Visualization</h2>
+            <canvas id="spectrumChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Absorption_spectrum" target="_blank">Absorption Spectrum - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Emission_spectrum" target="_blank">Emission Spectrum - Wikipedia</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Absorption and Emission Spectra. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
